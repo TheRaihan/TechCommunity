@@ -1,0 +1,6 @@
+<?php
+    include("config/db.php");
+?>
+ ALTER TABLE tablename AUTO_INCREMENT = 1
+
+$password = md5 ($password_1)

@@ -1,0 +1,37 @@
+<?php
+    include("config/db.php");
+?>
+ ALTER TABLE tablename AUTO_INCREMENT = 1
+
+$password = md5 ($password_1)
+
+
+blogs
+.data{
+                white-space: pre-wrap;
+                }
+
+id-auto
+name-from user database
+type-news,reviews,rumors,Others-user input
+category-phones,PC-Related,Gadgets,Others-user input
+title-user input
+description-user input
+blog_image-user input
+<option selected disabled hidden>Choose an Option</option>
+
+
+admin-
+admin dashboard
+-full post
+-post delete
+-comment delete
+
+add a blog 
+users 
+-user delete
+
+adminpass: admnin123
+
+
+
