@@ -27,5 +27,9 @@ include("db.php"); //data connection
         </span>
       
     </header>
+
+    <div class="card">
+        <a href="register.php"><button class="butt">Register</button></a>
+    </div>
 </body>
 </html>
