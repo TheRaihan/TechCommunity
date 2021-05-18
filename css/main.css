@@ -14,9 +14,8 @@ body {
 
 button.butt {
   cursor: pointer;
-
   border-radius: 10%;
-  background-color: #3498db;
+  background-color: #d11913;
   height: 50px;
   width: 200px;
   margin: 18% 40%;
@@ -26,5 +25,5 @@ button.butt {
 }
 
 button.butt:hover {
-  background-color: rgba(52, 152, 219, 0.8);
+  background-color: #d11913c2;
 }
