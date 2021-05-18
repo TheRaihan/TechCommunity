@@ -24,7 +24,7 @@ else
 {
 ?>
 
-<a href="index.php">    <img class="back" src="css/back.png" alt="" srcset="" width="30" height="28" style="margin:25px 40px;"></a>
+<a href="index.php">    <img class="back" src="css/back.png" alt="" srcset="" width="50" height="48" style="margin:25px 40px;"></a>
 <div class="login-box">
 
     <h1>Login</h1>

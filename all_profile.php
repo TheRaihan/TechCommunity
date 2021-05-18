@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <title>All Profile</title>
     <style>
         .image{
             border-radius: 8px;

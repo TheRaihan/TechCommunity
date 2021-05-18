@@ -18,6 +18,8 @@ else
             <br>
         </div>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+
     </head>
     <body>
 

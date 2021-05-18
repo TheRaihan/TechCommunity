@@ -16,7 +16,8 @@ else
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Dashboard</title>
 </head>
 <body>
    
@@ -76,7 +77,7 @@ while ($row = mysqli_fetch_array($result))
             box-shadow: 2px 2px 2px lightgray;
         }
     </style>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
 </head>
 <body class="back">
     <br>
@@ -130,7 +131,7 @@ while ($row = mysqli_fetch_array($result))
      <div  align="center" style="background:grey ">
         <br>
         <br>
-         <p style="color:white">Shifat Habib<br>
+         <p style="color:white">Raihan Taher<br>
          <a style="color:white" href="mailto:2017-1-60-072@std.ewubd.edu">TheRaihan</a></p>
         <br>
     </div>

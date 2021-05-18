@@ -8,6 +8,8 @@ include("user_navbar.php");
 <head>
 <title>POST</title>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/nav.css">
+
 </head>
 <body>
   <form method="POST" action="post_data.php" enctype="multipart/form-data">
