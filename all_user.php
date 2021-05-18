@@ -94,6 +94,7 @@ while ($row = mysqli_fetch_array($result))
 }
 echo "<a class='btn btn-secondary' href=admin_dashboard.php>Back To ADMIN Dashboard</a>";
 }
+include("footer.php");
 ?>
 
 

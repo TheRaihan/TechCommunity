@@ -9,6 +9,7 @@ if(isset($_POST['sort']))
 <html>
 <head>
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
 <br>
@@ -144,12 +145,7 @@ if(isset($_POST['sort']))
                  </div>
                  <br>
                  <br>
-                <footer>
-                     <div  align="center" style="background:grey ">
-                        <br>
-                        <br>
-                         <p style="color:white">Shifat Habib<br>
-                         <a style="color:white" href="mailto:shifat514@gmail.com">shifat514@gmail.com</a></p>
-                        <br>
-                    </div>
-                </footer>
+                
+                <?php
+                include("footer.php")
+                ?>

@@ -169,4 +169,5 @@ if($num>0)
 <?php
     }
 }
+include("footer.php");
 ?>

@@ -7,6 +7,7 @@ include("db.php"); //data connection
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -28,7 +29,7 @@ include("db.php"); //data connection
       
     </header>
 
-    <div class="card">
+    <div class="">
         <a href="register.php"><button class="butt">Register</button></a>
     </div>
 </body>
