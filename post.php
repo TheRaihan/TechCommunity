@@ -17,7 +17,7 @@ include("user_navbar.php");
             <br>
         
         <label for="type"><h4>What type of blog is this?</h4></label>
-        <select id="type" name="type"required>
+        <select class="form-select form-select-sm" id="type" name="type"required>
         <option selected disabled hidden>Choose an Option</option>
             <option value="news">News</option>
             <option value="reviews">Reviews</option>
@@ -27,7 +27,7 @@ include("user_navbar.php");
         <br>
         <br>
         <label for="category"><h4>What is this blog related to?</h4></label>
-        <select id="category" name="category" required>
+        <select class="form-select form-select-sm" id="category" name="category" required>
         <option selected disabled hidden>Choose an Option</option>
             <option value="phones">Phones</option>
             <option value="pc">PC</option>

@@ -26,6 +26,10 @@ else
         }
     </style>
     </head>
+    <body >
+    <br>
+    <h1 class="container ">USER LIST</h1>
+    <br>
  
 <?php
 $query="SELECT * from user";
@@ -39,11 +43,7 @@ while ($row = mysqli_fetch_array($result))
 
 <div class="container" align="center">
 
-            <br>
-            <h1>USER LIST</h1>
-            <br>
         </div>
-<body >
     <div class="container">
     <div class="row align-items-center; data">
         <div class="col-2">
@@ -73,9 +73,9 @@ while ($row = mysqli_fetch_array($result))
     </div>
 </div>
 <hr style="width:100%">
-<a class='btn btn-secondary' href=admin_dashboard.php style="margin-left: 41%; margin-bottom:10%">Back To ADMIN Dashboard</a>
 <?php
 }
+echo "<a class='btn btn-secondary' href=admin_dashboard.php style=\"margin-left: 41%; margin-bottom:10%\">Back To ADMIN Dashboard</a>";
 
 }
 include("../footer.php");

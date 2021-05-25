@@ -19,9 +19,7 @@ else
          
         if($count_likes>=1)
         {
-            // $c_query="INSERT into  sort(id,likes) VALUES('$blog_id','$count_likes')";
-            // mysqli_query($con,$c_query);
-            //header("Location:full_post.php?id=". $blog_id);
+
             if($_SESSION['pass']!="admin123")
             {
 
@@ -56,7 +54,6 @@ else
                 $co_query="INSERT INTO sort(id,likes) VALUES('$blog_id','$c_likes')";
                 mysqli_query($con,$co_query);
             }
-           // header("Location:full_post.php?id=". $blog_id);
            if($_SESSION['pass']!="admin123")
             {
 

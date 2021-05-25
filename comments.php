@@ -17,33 +17,30 @@ else{
 
 
         $s_query="SELECT * FROM sort WHERE id='$blog_id'";
-            $s_result=mysqli_query($con,$s_query);
-            $s_comments=mysqli_num_rows($s_result);
-            if($s_comments>=1)
-            {
-                $query2="SELECT * FROM comments WHERE blog_id='$blog_id'";
-                $result2=mysqli_query($con,$query2);
-                $c_comments=mysqli_num_rows($result2);
-                $c_query="UPDATE sort SET  comments='$c_comments' WHERE id='$blog_id'";
-                mysqli_query($con,$c_query);
-            }
-            else
-            {
-                $query2="SELECT * FROM comments WHERE blog_id='$blog_id'";
-                $result2=mysqli_query($con,$query2);
-                $c_comments=mysqli_num_rows($result2);
-                $co_query="INSERT INTO sort(id,comments) VALUES('$blog_id','$c_comments')";
-                mysqli_query($con,$co_query);
-            }
+        $s_result=mysqli_query($con,$s_query);
+        $s_comments=mysqli_num_rows($s_result);
 
-            if($_SESSION['pass']!="admin123")
-            {
+        $query2="SELECT * FROM comments WHERE blog_id='$blog_id'";
+        $result2=mysqli_query($con,$query2);
+        $c_comments=mysqli_num_rows($result2);
 
-                header("Location:full_post.php?id=". $blog_id);
-            }
-            else{
-                header("Location:admin_fullpost.php?id=". $blog_id);
-            }
+        if($s_comments>0)
+        {
+            $c_query="UPDATE sort SET  comments='$c_comments' WHERE id='$blog_id'";
+        }
+        else
+        {
+            $co_query="INSERT INTO sort(id,comments) VALUES('$blog_id','$c_comments')";
+        }
+        mysqli_query($con,$co_query);
+
+        if($_SESSION['pass']!="admin123")
+        {
+            header("Location:full_post.php?id=". $blog_id);
+        }
+        else{
+            header("Location:admin_fullpost.php?id=". $blog_id);
+        }
        // header("Location:full_post.php?id=". $blog_id);
       }
     } 
