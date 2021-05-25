@@ -1,18 +1,18 @@
 <?php
 session_start(); // session starts
-include("db.php");// database connection
+include("../db.php");// database connection
 include("admin_main_navbar.php");
 ?>
 <!DOCTYPE html>
 <html>
     <head>
         <title>ADMIN POST</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/nav.css">
 
     </head>
     <body>
-        <form method="POST" action="post_data.php" enctype="multipart/form-data">
+        <form method="POST" action="../post_data.php" enctype="multipart/form-data">
             <div class="container">
                 <br>
                 <h3>Use the admin password to post the blog</h3>
@@ -60,7 +60,7 @@ include("admin_main_navbar.php");
         </div>
         <?php
         
-        include("footer.php");
+        include("../footer.php");
 
         ?>
         </body>

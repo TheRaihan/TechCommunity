@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("db.php"); //database connection
+include("../db.php"); //database connection
 if(isset($_POST["register"]))
 {
    if($_POST['pass']=="admin123")

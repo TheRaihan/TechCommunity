@@ -19,7 +19,7 @@ if(isset($_POST["login"]))
             $_SESSION['pass']=$row['password'];
 
         }
-            header("Location:../admin_dashboard.php");
+            header("Location:./admin_dashboard.php");
 
     }
     else

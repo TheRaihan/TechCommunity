@@ -1,10 +1,10 @@
 <?php
 session_start();
-include("db.php"); //data connection
-include("user_navbar.php");
+include("../db.php"); //data connection
+include("../user_navbar.php");
 if(!isset($_SESSION['name']))
 {
-    echo "<script type='text/javascript'>alert('You are not Logged in!!'); window.location.href='adminlogin.php'</script>";
+    echo "<script type='text/javascript'>alert('You are not Logged in!!'); window.location.href='../adminlogin.php'</script>";
 }
 else{
      if(isset($_POST["add"]))

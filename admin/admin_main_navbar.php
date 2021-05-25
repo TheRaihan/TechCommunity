@@ -8,7 +8,7 @@
         </ul>
     </nav>
     <span>
-        <a class="cta"  href="admin/admin_logout.php" ><button>Logout</button></a>
+        <a class="cta"  href="admin_logout.php" ><button>Logout</button></a>
     </span>
     
 </header>

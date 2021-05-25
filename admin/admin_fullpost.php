@@ -1,8 +1,8 @@
 <?php
 session_start();
-include("db.php"); //data connection
+include("../db.php"); //data connection
 include("admin_main_navbar.php");
-echo $id =$_GET['id'];
+$id =$_GET['id'];
 $query="SELECT * FROM blogs where id='$id'";
 $result=mysqli_query($con,$query);
 $num=mysqli_num_rows($result);
@@ -23,7 +23,9 @@ if($num>0)
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/nav.css">
+
         <title>Document</title>
         <style>
             .back{
@@ -49,7 +51,7 @@ if($num>0)
                 white-space: pre-wrap;
             }
         </style>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
     </head>
     <body class="back">
         <br>
@@ -59,7 +61,7 @@ if($num>0)
             <div class="col-sm-2"></div>
             <div class="col-sm-8">
             <h1><?php echo $title;?></h1>
-            <img class="image" src="images/<?php echo $blog_image;?>"width="700px" height="400px">
+            <img class="image" src="../images/<?php echo $blog_image;?>"width="700px" height="400px">
             <br>
             <br>
             <p><?php 
@@ -161,13 +163,10 @@ if($num>0)
           
 
 
-        <!--bootstrap js-->
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>       
-        </body>
+</body>
         </html>
 <?php
     }
 }
-include("footer.php");
+include("../footer.php");
 ?>

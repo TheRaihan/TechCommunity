@@ -29,7 +29,7 @@ if(isset($_POST['post']))
                 $c_comments=0;
                 $co_query="INSERT INTO sort(id,likes,dislikes,comments) VALUES('$blog_id','$c_likes','$c_dislikes','$c_comments')";
                 mysqli_query($con,$co_query);
-                header("Location:admin_dashboard.php");
+                header("Location:admin/admin_dashboard.php");
         }
         else
         {

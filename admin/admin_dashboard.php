@@ -1,61 +1,20 @@
 <?php
 session_start(); // session starts
-include("db.php");// database connection
+include("../db.php");// database connection
 include("admin_main_navbar.php");
-echo $_SESSION['name'];
 if(!$_SESSION['name'])
 {
-    echo "<script type='text/javascript'>alert('You are not Logged in!!'); window.location.href='adminlogin.php'</script>";
+    echo "<script type='text/javascript'>alert('You are not Logged in!!'); window.location.href='../adminlogin.php'</script>";
 }
-else
-{
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <title>Dashboard</title>
-</head>
-<body>
-   
-<div class="container" align="center">
-    <h1>
-    <br>
-    <br>
-    Hi <?php echo $_SESSION['name'];?>
-    </h1>
-    <p>ADMIN</p>
 
-</div>
-    <!--bootstrap js-->
- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>   
-</body>
-</html>
-<?php
-}
-?>
-<?php
-$query="SELECT * from blogs";
-$result=mysqli_query($con,$query);
-while ($row = mysqli_fetch_array($result))
-{   $id=$row["id"];
-    $name=$row["name"];
-    $type=$row["type"];
-    $category=$row["category"];
-    $title=$row["title"];
-    $description=$row["description"];
-    $blog_image=$row['blog_image'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <style>
         .back{
                 background-color: whitesmoke;
@@ -77,15 +36,37 @@ while ($row = mysqli_fetch_array($result))
             box-shadow: 2px 2px 2px lightgray;
         }
     </style>
-
+    <title>Dashboard</title>
 </head>
-<body class="back">
+    <body class="back">
+   
+        <div class="container" align="center">
+            <h1>
+            <br>
+            Hi <?php echo $_SESSION['name'];?>
+            </h1>
+            <p>ADMIN</p>
+        </div>
+
+    <?php
+    $query="SELECT * from blogs";
+    $result=mysqli_query($con,$query);
+    while ($row = mysqli_fetch_array($result))
+    {   $id=$row["id"];
+        $name=$row["name"];
+        $type=$row["type"];
+        $category=$row["category"];
+        $title=$row["title"];
+        $description=$row["description"];
+        $blog_image=$row['blog_image'];
+    ?>
+
     <br>
     <br>
     <div class="container">
      <div class="row" >
         <div class="col-sm-4">  
-            <img class="image"src="images/<?php echo $blog_image;?>"width="400px" height="260px">
+            <img class="image"src="../images/<?php echo $blog_image;?>"width="400px" height="260px">
             <br>
             <br>
           <div align="center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
@@ -121,7 +102,7 @@ while ($row = mysqli_fetch_array($result))
 </div>
 <?php
 }
-include("footer.php");
+include("../footer.php");
 ?>
 </body>
 </html>

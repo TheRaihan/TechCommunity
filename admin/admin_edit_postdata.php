@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("db.php"); //data connection
+include("../db.php"); //data connection
 if(isset($_POST['editpost']))
 {   
 $name=$_SESSION["name"];

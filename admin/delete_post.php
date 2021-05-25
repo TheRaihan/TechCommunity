@@ -1,6 +1,6 @@
 <?php
 session_start(); // session starts
-include("db.php");// database connection
+include("../db.php");// database connection
 echo $id=$_GET['id'];
 if($_SESSION['pass']=="admin123")
 {
