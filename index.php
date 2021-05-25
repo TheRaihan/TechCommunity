@@ -29,8 +29,14 @@ include("db.php"); //data connection
       
     </header>
 
-    <div class="">
-        <a href="register.php"><button class="butt">Register</button></a>
-    </div>
+    <section id="banner">
+        <h2>PaperBack</h2>
+        <p>A Community Site for Tech Geeks of East West University</p>
+        <ul>
+            <a href="register.php"><button class="butt">Register</button></a>
+        </ul>
+    </section>
+
+
 </body>
 </html>
