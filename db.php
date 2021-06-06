@@ -1,4 +1,4 @@
 <?php
-$database_name="tech_web";
+$database_name="paperback";
 $con=mysqli_connect("localhost","root","",$database_name); // database connection
 ?>

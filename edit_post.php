@@ -26,6 +26,8 @@ if($_SESSION['name']==$_GET['g_name'])
   <head>
   <title>POST</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/nav.css">
+
   </head>
   <body>
     <form method="POST" action="edit_postdata.php" enctype="multipart/form-data">

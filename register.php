@@ -45,7 +45,7 @@ else
         </div>
 
 
-        <button name="register" type="submit" class="btn btn-secondary">Submit</button>
+        <button name="register" type="submit" class="btn">Submit</button>
 
         Already have an account?<a href="userlogin.php"> Login</a>
 
